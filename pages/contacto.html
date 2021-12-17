@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+    <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+                <li><a href="../pages/quienessomos.html">¿QUIENES SOMOS?</a></li>
+                <li><a href="../pages/recetas.html">RECETAS</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a> </li>
+            </ul>
+    </nav>
+<body>
+    <div class="fondoForm">
+            <h1>Formulario de contacto</h1>
+            <form class="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required placeholder="ingrese su Nombre"/><br>
+                <label for="Apellido">Apellido</label>
+                <input type="text" required placeholder="Ingrese su Apellido"/><br>
+                <label for="Edad">Edad</label>
+                <input type="number" required placeholder="Ingrese su Edad" /><br>
+                <label for="Email">Email</label>
+                <input type="email" required placeholder="Ingrese su correo"/><br>
+                <label for="Teléfono">Telefono</label>
+                <input type="number" required placeholder="Ingrese su telefono"/><br>
+                <textarea name="" id="" cols="30" rows="10" required placeholder="Ingrese su consulta"></textarea><br>
+                <input type="submit" value="enviar">    
+            </form>
+    </div>
+        <footer>
+                <ul>
+                <li><a href="https://www.facebook.com"><img src="../img/facebook.png" alt="facebook"></a></li>
+            
+                <li><a href="https://www.instagram.com"><img src="../img/Instagram.png" alt="instagram"></a></li>
+                
+                <li><a href="https://www.whatsapp.com"><img src="../img/Whatsapp.png" alt="whatsapp"></a></li>
+                </ul>
+        </footer>
+</body>
+</html>
