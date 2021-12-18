@@ -30,6 +30,11 @@ li a:hover {
 }
 
 h1{
+  background-color: #6aaf8f;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255, 255, 255, .5) 25px, rgba(255, 255, 255, .5) 50px);    
+  background-clip: text;
+  animation: color 50s linear infinite;
+  background-size: 200%;    
   padding: 5px;
   margin: 2px;
   color:rgb(41, 37, 37);
@@ -41,14 +46,19 @@ h1{
   text-align: center;
 }
 h2{
-  padding: 5px;
-  margin: 2px;
-  color:rgb(41, 37, 37);
-  font-weight: normal;
-  font-size: 27px;
-  font-family: 'Grechen Fuemen', cursive;
-  text-transform: uppercase;
-  text-align: left;
+animation-name: movimiento-lateral;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;/*para que vuelva a su posicion inicial */
+width: 300px;
+background-color: Teal;
+color: #fff;
+position: relative;
+padding: 2px;
+text-align: center;
+font-size: 30px;
+font-family: 'Grechen Fuemen', cursive;
+text-transform: uppercase;
 }
 .recetas{
   text-align: Center;
@@ -77,8 +87,13 @@ p{
 }
 
 .bienvenidos{
-  color: black;
+  padding: 5px;
+  margin: 2px;
+  color:rgb(41, 37, 37);
+  font-weight: normal;
+  text-align: center;
   flex: auto;
+  background-image: linear-gradient(to left, #38683202, #3a899c, #47a2b3, #4dfc9673, #618146bb);
   font-size: 45px;
   font-family: 'Grechen Fuemen', cursive;
   font-family: 'Oswald', sans-serif;;
@@ -328,5 +343,19 @@ p{
     font-size: 20px;
   }
 }
+@keyframes color {
+  from {
+      background-position: 0% 50%;
+  }
 
-
+  to {
+      background-position: 100% 50%;
+  }
+}
+@keyframes movimiento-lateral {
+  from {
+      left: 0px;
+  }
+  to {
+      left: 700px;
+  } 
