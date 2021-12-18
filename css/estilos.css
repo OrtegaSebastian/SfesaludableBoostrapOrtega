@@ -86,7 +86,7 @@ p{
   
 }
 
-.bienvenidos{
+.container-fluid{
   padding: 5px;
   margin: 2px;
   color:rgb(41, 37, 37);
@@ -99,23 +99,13 @@ p{
   font-family: 'Oswald', sans-serif;;
 }
 
-.bienvenidos1{
+.img-fluid{
   border: dashed 1.5px firebrick;
   background-image: url(/img/inicio.png);
-  color: black;
-  padding: 5px;
-  margin: 5px;
-  display: inline-block;
   font-size: 1.4rem;
+  height: 100%;
 }
 
-.fondo {
-   opacity: 0.65;
-   display: inline-block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100%;
-}
 
 .quienessomos{
   color: black;
@@ -302,7 +292,6 @@ p{
     grid-column-start: span 3;
   }
 }
-
 @media (min-with:1024px){
   .gallery-container{
     grid-template-columns: repeat(5,1fr);
