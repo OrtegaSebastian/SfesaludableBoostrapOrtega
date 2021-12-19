@@ -5,12 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Oswald:wght@200&display=swap');
 
+
+/* etiquetas */
 ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #209e788a;
+   background-image: linear-gradient(to left, #38683202, #3a899c, #47a2b3, #4dfc9673, #618146bb);
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -60,14 +62,11 @@ font-size: 30px;
 font-family: 'Grechen Fuemen', cursive;
 text-transform: uppercase;
 }
-.recetas{
-  text-align: Center;
-  font-weight: normal;
-  font-size: 64px;
-  font-family: 'Grechen Fuemen', cursive;
-  text-transform: uppercase;
-  
+h5{
+  text-align: center;
+  color: #444;
 }
+
 
 div{
   margin: 4px;
@@ -86,6 +85,44 @@ p{
   
 }
 
+/* Pages */
+.quienessomos{
+  color: black;
+  font-size: 1.3rem;
+  background-image: url(/img/inicio.png);
+  font-family: 'Oswald', sans-serif;
+}
+.recetas{
+  text-align: Center;
+  font-weight: normal;
+  font-size: 64px;
+  font-family: 'Grechen Fuemen', cursive;
+  text-transform: uppercase;
+  
+}
+
+
+.form{
+      
+      background-color: #f2f2f2e8;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      
+     
+}
+
+
+
+.productos{
+  font-family: 'Grechen Fuemen', cursive;
+  font-family: 'Oswald', sans-serif;
+  color: #444;
+  text-align: center;
+}
+/* Galería y estilos */
 .container-fluid{
   padding: 5px;
   margin: 2px;
@@ -93,7 +130,6 @@ p{
   font-weight: normal;
   text-align: center;
   flex: auto;
-  background-image: linear-gradient(to left, #38683202, #3a899c, #47a2b3, #4dfc9673, #618146bb);
   font-size: 45px;
   font-family: 'Grechen Fuemen', cursive;
   font-family: 'Oswald', sans-serif;;
@@ -105,43 +141,6 @@ p{
   font-size: 1.4rem;
   height: 100%;
 }
-
-
-.quienessomos{
-  color: black;
-  font-size: 1.3rem;
-  background-image: url(/img/inicio.png);
-  font-family: 'Oswald', sans-serif;
-}
-
-.fondoForm{
-    background-image: url(/img/fondo.jpg);
-    opacity: 0.65;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.form{
-      background-color: #f2f2f2e8;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-}
-
-/* galeria Productos */
-
-.productos{
-  font-family: 'Grechen Fuemen', cursive;
-  font-family: 'Oswald', sans-serif;
-  color: #444;
-  text-align: center;
-}
-
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -182,6 +181,8 @@ p{
 .gallery__item:nth-child(9){
   grid-column-start: span 2;
 }
+
+
 
 /* Media querys */
 
@@ -346,5 +347,5 @@ p{
       left: 0px;
   }
   to {
-      left: 700px;
-  } 
+      left: 500px;      
+  } }
