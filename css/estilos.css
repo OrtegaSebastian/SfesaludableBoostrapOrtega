@@ -47,7 +47,7 @@ h1{
   text-transform: uppercase;
   text-align: center;
 }
-h2{
+.historia{
 animation-name: movimiento-lateral;
 animation-duration: 3s;
 animation-iteration-count: infinite;
@@ -75,13 +75,12 @@ div{
 }
 
 p{
-  border: dashed 1.5px rgb(138, 29, 29);
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-color: #FFFFF0;
   color: black;
   padding: 5px;
   margin: 3px;
   display: inline-block;
-  font-size: 25px;
+  font-size: 22px;
   
 }
 
@@ -93,13 +92,67 @@ p{
   font-family: 'Oswald', sans-serif;
 }
 .recetas{
-  text-align: Center;
-  font-weight: normal;
-  font-size: 64px;
-  font-family: 'Grechen Fuemen', cursive;
+  padding: 5px;
+  margin: 3px;
+  text-align: left;
+  font-size: 27px;
+  font-family: 'Grechen Fuemen' ;
   text-transform: uppercase;
+  }
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .col-sm-4 {
+    float: left;
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-sm-6 {
+    float: left;
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* end Bootstrap style */
   
-}
+  .customer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .customer:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    border: 1px solid gray;
+  }
+  
+  .customer a {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .customer a img {
+    max-width: 100%;
+  }
+  
+  .customer .caption {
+    padding-right: 15px;
+  }
+
+
+
+
 
 
 .form{
@@ -113,8 +166,6 @@ p{
       
      
 }
-
-
 
 .productos{
   font-family: 'Grechen Fuemen', cursive;
@@ -136,11 +187,9 @@ p{
 }
 
 .img-fluid{
-  border: dashed 1.5px firebrick;
   background-image: url(/img/inicio.png);
   font-size: 1.4rem;
-  height: 100%;
-}
+ }
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
